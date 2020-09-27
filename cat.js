@@ -1,12 +1,9 @@
 const { BADHINTS } = require('dns');
 const fs = require('fs');
 
-module.exports = function (fileName) {
+module.exports = function (fileName, done) {
   fs.readFile(fileName, (err, data) => {
     if (err) throw err;
-    process.stdout.write(data);
-    //console.log(data);
-
-    process.stdout.write('\nprompt >');
+    done(data);
   });
 };

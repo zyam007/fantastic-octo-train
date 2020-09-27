@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/zyam007/fantastic-octo-train/issues"
   },
-  "homepage": "https://github.com/zyam007/fantastic-octo-train#readme"
+  "homepage": "https://github.com/zyam007/fantastic-octo-train#readme",
+  "dependencies": {
+    "request": "^2.88.2"
+  }
 }
